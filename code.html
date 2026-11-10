@@ -1,0 +1,964 @@
+<!DOCTYPE html><html class="dark" lang="pt-BR"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#d4af37",
+          "on-tertiary-fixed": "#002018",
+          "surface-container-low": "#1b1b20",
+          "secondary-fixed-dim": "#edbf70",
+          "background": "#131318",
+          "on-error-container": "#ffdad6",
+          "tertiary-container": "#61c4a7",
+          "primary": "#f2ca50",
+          "secondary-fixed": "#ffdea9",
+          "tertiary-fixed": "#92f5d6",
+          "surface-tint": "#e9c349",
+          "on-primary-fixed-variant": "#574500",
+          "surface-bright": "#39393e",
+          "secondary": "#edbf70",
+          "surface-container-highest": "#35343a",
+          "surface-container-high": "#2a292f",
+          "outline-variant": "#4d4635",
+          "on-secondary": "#422c00",
+          "surface-container": "#1f1f24",
+          "on-error": "#690005",
+          "on-tertiary": "#00382b",
+          "outline": "#99907c",
+          "on-primary-fixed": "#241a00",
+          "primary-fixed": "#ffe088",
+          "surface-container-lowest": "#0e0e13",
+          "inverse-on-surface": "#303035",
+          "on-tertiary-container": "#004f3e",
+          "on-surface-variant": "#d0c5af",
+          "inverse-primary": "#735c00",
+          "on-primary-container": "#554300",
+          "tertiary-fixed-dim": "#76d8bb",
+          "on-tertiary-fixed-variant": "#005140",
+          "on-primary": "#3c2f00",
+          "error-container": "#93000a",
+          "inverse-surface": "#e4e1e9",
+          "surface-variant": "#35343a",
+          "on-background": "#e4e1e9",
+          "secondary-container": "#6a4a01",
+          "on-secondary-container": "#e9bc6c",
+          "tertiary": "#7de0c2",
+          "on-secondary-fixed": "#271900",
+          "primary-fixed-dim": "#e9c349",
+          "surface-dim": "#131318",
+          "surface": "#131318",
+          "on-secondary-fixed-variant": "#5f4100",
+          "error": "#ffb4ab",
+          "on-surface": "#e4e1e9"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-mobile": "1.25rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-lg": "1.5rem",
+          "margin": "3rem",
+          "gutter": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Newsreader"
+          ],
+          "headline-md": [
+            "Newsreader"
+          ],
+          "label-sm": [
+            "Space Grotesk"
+          ],
+          "display-lg-mobile": [
+            "Newsreader"
+          ],
+          "body-lg": [
+            "Space Grotesk"
+          ],
+          "body-md": [
+            "Space Grotesk"
+          ],
+          "headline-lg-mobile": [
+            "Newsreader"
+          ],
+          "display-lg": [
+            "Newsreader"
+          ],
+          "headline-sm": [
+            "Newsreader"
+          ],
+          "label-md": [
+            "Space Grotesk"
+          ],
+          "label-lg": [
+            "Space Grotesk"
+          ],
+          "body-sm": [
+            "Space Grotesk"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "38px",
+            {
+              "lineHeight": "46px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "500"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.4)]"><div class="bg-surface-container-lowest/90 px-margin-mobile md:px-margin py-1 text-center flex items-center justify-center gap-space-sm"><span class="flex items-center gap-1 text-primary font-label-sm text-label-sm tracking-widest uppercase"><span class="material-symbols-outlined text-primary text-[14px]">star</span> 4.9 no Google (86 avaliações)</span><span class="text-outline font-label-sm text-label-sm">•</span><span class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm"><span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Aberto até as 20h</span></div><div class="h-20 w-full px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" href="#hero"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">TATTOONES</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase text-[9px]">Vagner de Paula</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="uppercase tracking-wider transition-colors text-primary font-semibold" data-path="inicio" href="#hero">Início</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-vagner" href="#sobre">Sobre Vagner</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="estilos-portfolio" href="#portfolio">Estilos &amp; Portfólio</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="diferenciais" href="#diferenciais">Diferenciais</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="depoimentos" href="#depoimentos">Depoimentos</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="duvidas" href="#faq">Dúvidas</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="como-chegar" href="#contato">Como Chegar</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="flex items-center justify-center p-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-tertiary transition-all duration-300 shadow-[0_2px_8px_rgba(0,0,0,0.3)]" href="https://wa.me/5511965119348" rel="noopener noreferrer" target="_blank" title="Falar no WhatsApp: (11) 96511-9348"><span class="material-symbols-outlined text-tertiary">chat</span></a><a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider transition-all duration-300 shadow-[0_4px_16px_rgba(212,175,55,0.25)] hover:shadow-[0_6px_20px_rgba(212,175,55,0.35)]" href="https://www.fresha.com/pt/lvp/tattoones-tatuagens-avenida-joao-de-andrade-D7R9J1" rel="noopener noreferrer" target="_blank">Agendar no Fresha</a><div class="flex items-center gap-2 pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtX-a48Pg4m_ssSiJBVOVKOT9MPf_g2RHPavBFjU_qcOhwbuwUW-rBqd0DrkOte3Ti9KXtj3BoKrhE37sfrjH3J7FJmkBPqsoyQpsAqBuQw1iFkeLINI9OUTB-TlXkvUDRgGVY7hIxdDetmcUAF8H_fR8TK6AxD5vyJfQCIg45Weqoi-u8s-H7KELk7bYuZZUBtrAHW3FxL-Ly_4MR91rk5Mjly-O2Pqd0wUTtuEYtWdbm7i1T00L3mA"></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest px-margin-mobile md:px-margin pt-space-xl pb-space-xl md:py-32" id="hero">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-primary/10 rounded-full blur-[130px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-24 w-96 h-96 bg-tertiary/10 rounded-full blur-[110px] pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-space-xl">
+<!-- Left Column: Persuasive Copy -->
+<div class="flex flex-col items-start w-full lg:w-7/12 gap-space-md">
+<!-- Trust Badge -->
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-surface-container-high shadow-md">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">4.9 NO GOOGLE (86 AVALIAÇÕES) • OSASCO - SP • ABERTO ATÉ AS 20H</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface leading-tight tracking-tight">
+          Sua história eternizada na pele com <span class="italic text-primary font-headline-lg">arte exclusiva</span>, técnica impecável e o acolhimento que você merece.
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          No Tattoones, cada traço e cada aplicação de piercing é conduzida pelo artista Vagner de Paula com padrão cirúrgico de biossegurança, paciência artesanal e um ambiente 100% acolhedor e inclusivo em Osasco.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full pt-space-sm">
+<a class="inline-flex items-center justify-center gap-space-sm px-6 py-4 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider transition-all duration-300 shadow-[0_8px_24px_-4px_rgba(242,202,80,0.3)] hover:shadow-[0_12px_28px_-2px_rgba(242,202,80,0.45)] group" href="https://www.fresha.com/pt/lvp/tattoones-tatuagens-avenida-joao-de-andrade-D7R9J1" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:scale-110">calendar_month</span>
+<span class="">Agendar Horário Online no Fresha</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-sm px-6 py-4 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-tertiary hover:text-tertiary-fixed font-label-lg text-label-lg uppercase tracking-wider transition-all duration-300 shadow-md" href="https://wa.me/5511965119348" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-tertiary">chat</span>
+<span class="">Chamar Vagner no WhatsApp</span>
+</a>
+</div>
+<!-- Micro-Proof Signals -->
+<div class="flex flex-wrap items-center gap-y-2 gap-x-space-lg pt-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]">bolt</span> Sem tempo de espera</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">local_parking</span> Estacionamento gratuito</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[18px]">diversity_1</span> Espaço LGBTQ+ Friendly</span>
+</div>
+</div>
+<!-- Right Column: Visual Composition with Layered Floating Cards -->
+<div class="relative w-full lg:w-5/12 flex items-center justify-center pt-8 lg:pt-0">
+<!-- Main Portrait Media Container -->
+<div class="relative w-full max-w-md aspect-[4/5] rounded-xl overflow-hidden bg-surface-container shadow-2xl">
+<img alt="Vagner de Paula - Tatuador e Body Piercer no Tattoones Studio" class="w-full h-full object-cover bg-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtX-a48Pg4m_ssSiJBVOVKOT9MPf_g2RHPavBFjU_qcOhwbuwUW-rBqd0DrkOte3Ti9KXtj3BoKrhE37sfrjH3J7FJmkBPqsoyQpsAqBuQw1iFkeLINI9OUTB-TlXkvUDRgGVY7hIxdDetmcUAF8H_fR8TK6AxD5vyJfQCIg45Weqoi-u8s-H7KELk7bYuZZUBtrAHW3FxL-Ly_4MR91rk5Mjly-O2Pqd0wUTtuEYtWdbm7i1T00L3mA">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<!-- Caption over image bottom -->
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Vagner de Paula</p>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Master Artist &amp; Piercer</p>
+</div>
+<div class="px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span> Atendendo Hoje
+            </div>
+</div>
+</div>
+<!-- Floating Card 1: Experience & Reviews Metric (Overlapping top left) -->
+<div class="absolute -top-4 -left-4 md:-left-8 p-space-md rounded-xl bg-surface-container-high/95 backdrop-blur-md shadow-xl flex items-center gap-space-sm max-w-[200px]">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none">+10 Anos</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">de arte &amp; dedicação</span>
+</div>
+</div>
+<!-- Floating Card 2: Autoclave & Safe Clinic (Overlapping bottom right) -->
+<div class="absolute -bottom-6 -right-2 md:-right-6 p-space-md rounded-xl bg-surface-container-highest/95 backdrop-blur-md shadow-xl flex flex-col gap-1 max-w-[220px]">
+<div class="flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm tracking-wider uppercase">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="">Grau Hospitalar</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">100% material descartável, estéril e inspecionado.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 2: ABOUT THE ARTIST (VAGNER DE PAULA)
+       ========================================== -->
+<section class="w-full bg-surface px-margin-mobile md:px-margin py-space-xl" id="sobre">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col items-start gap-space-xs max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">Trajetória, Técnica &amp; Respeito</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">O Artista &amp; A Alma do Estúdio</h2>
+<div class="w-16 h-0.5 bg-primary mt-1"></div>
+</div>
+<!-- Bento Grid for About Artist -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Large Artist Portrait + Experience Tag (5 cols) -->
+<div class="lg:col-span-5 relative rounded-xl overflow-hidden bg-surface-container-low shadow-xl min-h-[440px] flex flex-col justify-end p-space-lg"><img alt="Vagner de Paula no estúdio Tattoones" class="absolute inset-0 w-full h-full object-cover bg-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjTb_Ln2v0gSEg5L-wEgUrwvVx7cvGA8oGKy9fn2UMD5pKI4YBkj7oOvH5BXhyXr1ELwvUhuS9IGFx1e4gOeeiltcuxTMnyHKmwCTSrJMvjLsh2JwLRbwZsctJ4YMiB1vBzVQ6ielDbVKyTbKgaIbXaxiy4NpkZbQi6LNPTDLsHCFVdeuV_vxsv1p7mkcfSgRKer67YbBfJGFaIriWUrkOpmpP6NVfStiG3ZbGHnPRhS6wTnFluEiLZA"><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div><div class="absolute top-4 right-4 flex items-center gap-2 p-1.5 pr-3 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-lg border border-primary/20"><img alt="Vagner sorrindo no atendimento" class="w-9 h-9 rounded-full object-cover ring-1 ring-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAPfDVB_6hptFQ_KFlcfoHGejDcNuIYoIZTFSIc6B0ocYlX1YSJ5wRecTGlXRyhN1DHAEffyAL9W81jTVxeoYijCPcJAoG4SALkQm5CWcRMLwnL0g4fYDBfUkpp7cvP9dGm5Lmi4MOAVD4KuQdutVgMgYNWOEz2YIk8owwbqvTgAjUiXW6IcTvENLnfMU9IrXAJ2nmbg02qbpXR2pScooHnIJtobDS4eYGrcLYPLJbDFB6LlaMSqwJQQ"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-primary leading-tight font-semibold">100% Acolhedor</span><span class="font-label-sm text-label-sm text-on-surface-variant text-[9px] leading-tight">Atendimento humano</span></div></div><div class="relative z-10 flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Artista Residente &amp; Fundador</span><h3 class="font-headline-md text-headline-md text-on-surface">Vagner de Paula</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Tatuador e Body Piercer apaixonado pela narrativa e anatomia individual de cada cliente em Osasco e região metropolitana.</p></div></div>
+<!-- Narrative & Core Pillars (7 cols) -->
+<div class="lg:col-span-7 flex flex-col justify-between gap-space-lg">
+<!-- Text Narrative Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col gap-space-md">
+<h4 class="font-headline-sm text-headline-sm text-primary">Acolhimento com excelência técnica sem arrogância</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Com mais de uma década de dedicação constante à arte sobre a pele e à perfuração corporal precisa, Vagner de Paula construiu sua reputação baseada em dois pilares raros: <strong class="text-on-surface font-semibold">maestria estética irrepreensível</strong> e uma <strong class="text-on-surface font-semibold">humildade acolhedora</strong> que desfaz qualquer apreensão logo nos primeiros minutos de conversa.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Seja a sua primeira tatuagem, uma composição complexa de fechamento de braço ou uma perfuração delicada na orelha, o processo é conduzido com paciência pedagógica: cada etapa é explicada, os traços são ajustados junto a você e cada linha respira sintonia com o seu corpo.
+            </p>
+<div class="p-space-md rounded-lg bg-surface-container-high/60">
+<p class="font-headline-sm text-headline-sm italic text-secondary-fixed">
+                “Aqui não existe pressa nem julgamento. Existe escuta atenta, cuidado meticuloso e respeito absoluto pela sua individualidade.”
+              </p>
+</div>
+</div>
+<!-- Credential Mini-Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container shadow-sm flex flex-col gap-1">
+<span class="material-symbols-outlined text-primary text-[28px]">biotech</span>
+<span class="font-label-lg text-label-lg text-on-surface">Biossegurança</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ciclo em autoclave com teste biológico semanal.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container shadow-sm flex flex-col gap-1">
+<span class="material-symbols-outlined text-tertiary text-[28px]">diamond</span>
+<span class="font-label-lg text-label-lg text-on-surface">Titânio ASTM F-136</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Joalheria biocompatível de grau médico para piercings.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container shadow-sm flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[28px]">gesture</span>
+<span class="font-label-lg text-label-lg text-on-surface">Projetos Exclusivos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Desenhos autorais e adaptação anatômica sob medida.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 3: STYLES & PORTFOLIO
+       ========================================== -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile md:px-margin py-space-xl" id="portfolio">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Intro -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">Portfólio &amp; Especialidades</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Especialidades Artísticas &amp; Versatilidade Técnica</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Do realismo dramático aos traços mais sutis, cada projeto é personalizado e anatomicamente adaptado para fluir naturalmente com seu corpo.</p>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm self-start md:self-auto" href="https://wa.me/5511965119348?text=Ola%20Vagner!%20Gostaria%20de%20conversar%20sobre%20uma%20ideia%20para%20minha%20tatuagem." rel="noopener noreferrer" target="_blank">
+<span class="">Orçar Ideia Autoral</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- 6-Grid Portfolio Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg"><!-- Card 1: Realismo Preto e Cinza (Leão nas costas) -->
+<div class="group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-lg transition-transform duration-300 hover:-translate-y-1">
+  <div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Tatuagem realista de cabeça de leão cobrindo todas as costas por Vagner de Paula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbF2Mu3CBif22anBHIwH1O6HQ4A1Z4uiKienYh9Mn3s3vHXu5-O5Q4LFRrNsoy_urMT0aH8Zap1eTpsnx-t9VeN0qd72f5T7lhCa2qoYscg7gFkNkJxG5WmBnbz8SR1u_EFYWkynQPr4Q_z2P9digRz4BtGCTsDW1XF5URM__232Uuse0y6k-Pwy8pNb5Goen-sroMdp-cnVqrPN0BwK99boquu2oOJ7ZXE8oBSV10e_QR2R32N37K4A">
+    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+    <div class="absolute top-3 left-3 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-primary uppercase tracking-wider">
+      Fechamento de Costas &amp; Realismo Animal
+    </div>
+  </div>
+  <div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between bg-surface-container-low">
+    <div>
+      <h3 class="font-headline-sm text-headline-sm text-on-surface">Realismo Preto e Cinza</h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Fechamento de costas em realismo imponente com leão, profundidade dramática, texturas de pelos hiper-realistas e sombreamento suave.</p>
+    </div>
+    <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+      <span class="">Sessões individuais ou fechamento</span>
+      <span class="material-symbols-outlined text-primary text-[18px]">brush</span>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2: Chicano & Street Culture -->
+<div class="group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-lg transition-transform duration-300 hover:-translate-y-1">
+  <div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Tatuagem Chicano de roleta, cartas e máscara em preto e cinza por Vagner de Paula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfpXnLkjMGKTf4Q58nc8ybB_UOq0RLVbrJeiNfqFkCRZJGeJnhxdNSZ9Edde9Qzm1he4vA_IE8Tj-VibW969gP4Eg1RBFfs8fwP2wOdZ_M4sWr63nVVrUdFJrUaXqU50CvNw4FE9JGmDPklNf5oXwaVReiMFFrQSrfiDeZqNDAvKQ07jVYiGvYQpQR2EwgfYtC-UjlSsIjisO_bddSiCq_D-eUmBLgSmZc3yjkCdJjU2GixJuU8l8PPQ">
+    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+    <div class="absolute top-3 left-3 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-secondary uppercase tracking-wider">
+      Fechamento de Braço &amp; Cassino
+    </div>
+  </div>
+  <div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between bg-surface-container-low">
+    <div>
+      <h3 class="font-headline-sm text-headline-sm text-on-surface">Chicano &amp; Street Culture</h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Composição autêntica de roleta de cassino, naipes de baralho e catrina/palhaça chicana com contrastes marcantes e traço cirúrgico.</p>
+    </div>
+    <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+      <span class="">Identidade forte e exclusiva</span>
+      <span class="material-symbols-outlined text-secondary text-[18px]">casino</span>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3: Tatuagens Religiosas & Sacras -->
+<div class="group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-lg transition-transform duration-300 hover:-translate-y-1">
+  <div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Fechamento de costas sacro com Jesus Cristo e querubins por Vagner de Paula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgv-Xtv2z7ZefkCHQihJTeHmPyE57dc9AAxOJ78tooOGWNn2Y1ClICanxNRlcxKaRPPM3834EK0C0Wql9rYWaqZc4JNCSuQq54ZENg0aDLu5vDV5-2FcN35I6NSx34qhZRP6WitlDZQCRE6D1D90CgRIA3-tuTZcC-v1LEYRP7SiTUqYq3sZAb9SKifPCFAcA2le0MTl6t_7pbpjdsLoD9bq8y_FcoP7ojgL9tzGzmigVET5yw52QaRQ">
+    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+    <div class="absolute top-3 left-3 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-primary uppercase tracking-wider">
+      Grande Escala &amp; Devoção
+    </div>
+  </div>
+  <div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between bg-surface-container-low">
+    <div>
+      <h3 class="font-headline-sm text-headline-sm text-on-surface">Tatuagens Religiosas &amp; Sacras</h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Grande mural nas costas com representação de Jesus Cristo, querubins e passagens bíblicas com gradação aveludada de preto e cinza.</p>
+    </div>
+    <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+      <span class="">Significado &amp; Devoção profunda</span>
+      <span class="material-symbols-outlined text-primary text-[18px]">church</span>
+    </div>
+  </div>
+</div>
+
+<!-- Card 4: Fineline & Caligrafia Delicada -->
+<div class="group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-lg transition-transform duration-300 hover:-translate-y-1">
+  <div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Tatuagem fineline com borboletas e lettering Protegida por Deus por Vagner de Paula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDoDHnHkyHnLy0vx6Tb58lEp05SPqXvpBhutpOVONfEjgKwURtGEqXqkqySH8EZ806y9f8jtWI_nP4Rudzecg3afqEhjk3D0O3yZ4CBUnomn20jhWvArN-5g_r6YGR_EtH_AvET4VXaPRiP3m_KI2iIJ65WCDCjAPOFod4jwemXTFDkH33s_6c6MvnIGj00-OuFCeE-Qzp2PByGfGP7avt1pAKcbWIgJGbjvrfH_UdklMxhnx-CCGQHA">
+    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+    <div class="absolute top-3 left-3 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-tertiary uppercase tracking-wider">
+      Traço Fino &amp; 1ª Tatuagem
+    </div>
+  </div>
+  <div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between bg-surface-container-low">
+    <div>
+      <h3 class="font-headline-sm text-headline-sm text-on-surface">Fineline &amp; Caligrafia Delicada</h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Aplicação milimétrica com agulhas finíssimas: borboletas etéreas e lettering caligráfico 'Protegida por Deus' com cicatrização perfeita.</p>
+    </div>
+    <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+      <span class="">Ideal para 1ª tatuagem &amp; sutileza</span>
+      <span class="material-symbols-outlined text-tertiary text-[18px]">draw</span>
+    </div>
+  </div>
+</div>
+
+<!-- Card 5: Colorido & Neo-Tradicional -->
+<div class="group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-lg transition-transform duration-300 hover:-translate-y-1">
+  <div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Tatuagem de rosas vermelhas e borboletas com cores vibrantes por Vagner de Paula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeQQSBwcdxZXZj5qIW4tJlFuMZU9SPTnqw1fkLETKv6gw2n23zDjp3Td5v6PeIJUCDNiOKNmhO3mi2rMvRZaG_CqdiUTyHS8mRRwN_nkSA2zlczdQIU5hjv-x5lzHpM7SgjPO1g_6mQ35oiaSyouKzPY87dWb4LdEHXPybev9wZ_EdppV_djZveClYSUby1Z-b5q_N5gqTsi0d1uK0BcevFKUak2VJQQdxkztrK0TxsOzeEzdqYNBP_A">
+    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+    <div class="absolute top-3 left-3 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">
+      Cores Vivas &amp; Neo-Trad
+    </div>
+  </div>
+  <div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between bg-surface-container-low">
+    <div>
+      <h3 class="font-headline-sm text-headline-sm text-on-surface">Colorido &amp; Neo-Tradicional</h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Trabalho em cores vivas com ramo de rosas vermelhas e borboletas, saturação sólida e linhas bem definidas de alta durabilidade.</p>
+    </div>
+    <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+      <span class="">Saturação brilhante e duradoura</span>
+      <span class="material-symbols-outlined text-secondary text-[18px]">palette</span>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6: Fechamento de Peito & Asas -->
+<div class="group relative flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-lg transition-transform duration-300 hover:-translate-y-1">
+  <div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Tatuagem no peito com cruz e asas em preto e cinza por Vagner de Paula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDglIfGBboq7oyMFrsWQ0qgEe7e33_F7r4iQjfYwoplA8tiJM8adsJT7vSAofdLptI0FyKn-CIfjU91jWEJxDoSfuGzjQUpgkse3iuvTvccnbrX83IENy8AzqBzUUJxokLQbEOtsze5bq8hWl7j4o58_TeEpZbbvO_lLnkzIvROFwbjItufjDf-LUn1kqmEbqkQV3AFgTpBFxnTMIKGyWbD05iL3sy4P1Wk32VeLXC2E11uEP-3rrFkGw">
+    <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-90"></div>
+    <div class="absolute top-3 left-3 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-primary uppercase tracking-wider">
+      Anatomia &amp; Simetria
+    </div>
+  </div>
+  <div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between bg-surface-container-low">
+    <div>
+      <h3 class="font-headline-sm text-headline-sm text-on-surface">Fechamento de Peito &amp; Asas</h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Composição anatômica de cruz radiante com envergadura completa de asas emplumadas em preto e cinza no peitoral.</p>
+    </div>
+    <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+      <span class="">Equilíbrio anatômico &amp; impacto</span>
+      <span class="material-symbols-outlined text-primary text-[18px]">shield</span>
+    </div>
+  </div>
+</div></div>
+<!-- Conversion Banner under Portfolio -->
+<!-- Showcase de Destaques Autorais Extras (Joker e Leão Romano) -->
+<div class="flex flex-col gap-space-md pt-space-sm">
+  <div class="flex items-center justify-between flex-wrap gap-2">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span>
+      <span class="font-label-md text-label-md uppercase tracking-wider text-primary">Grandes Fechamentos &amp; Autoria</span>
+    </div>
+    <span class="font-label-sm text-label-sm text-on-surface-variant">Trabalhos cicatrizados &amp; em andamento</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+    <!-- Extra Card 1: Fechamento Joker e Palhaços -->
+    <div class="group relative flex flex-col sm:flex-row rounded-xl overflow-hidden bg-surface-container-low shadow-lg border border-primary/20 hover:border-primary/40 transition-all duration-300">
+      <div class="relative w-full sm:w-1/2 aspect-[4/5] sm:aspect-auto overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Fechamento de costas Coringa / Joker e palhaços por Vagner de Paula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkDOjhblPmLNAsWzTElsGGQ4ksH7o-JjpUGhCY19izZaWlNjmKs8MNltDiH4vs-5P3fKzgrgNSJqpBc1ZHQqrzkBfii3fb_L-8jlo_83LAt_OR0n6KohcOJF26wlDYYVMQ2ON3bOSN2Nfm347U1jya3gMxq_3oMYy3S7cX74yjL11-ie_q79u0tj3v8dmQrnjjNUzK_AmXXHQ-RzQcVIKYCNs7j1NsmELy8BBKlZs97cKrMKYJ9FMjqQ">
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 sm:hidden"></div>
+        <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-primary uppercase tracking-wider">
+          Costas Completas
+        </div>
+      </div>
+      <div class="p-space-md sm:p-space-lg w-full sm:w-1/2 flex flex-col justify-between gap-space-sm bg-surface-container-low">
+        <div class="flex flex-col gap-1">
+          <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Black &amp; Grey Temático</span>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface">Fechamento Coringa &amp; Circo</h4>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Composição narrativa de costas completas retratando Coringa, palhaço melancólico e elementos urbanos com texturas ricas em preto e cinza.</p>
+        </div>
+        <div class="pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-secondary">
+          <span class="">Trabalho Autoral Exclusivo</span>
+          <span class="material-symbols-outlined text-[18px]">verified</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra Card 2: Leão Rugindo e Relógio Romano -->
+    <div class="group relative flex flex-col sm:flex-row rounded-xl overflow-hidden bg-surface-container-low shadow-lg border border-primary/20 hover:border-primary/40 transition-all duration-300">
+      <div class="relative w-full sm:w-1/2 aspect-[4/5] sm:aspect-auto overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Tatuagem no braço de leão com relógio romano e algarismos por Vagner de Paula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ5bMAPpyldY8pBKl2ATJmm63DCHUpBNyttQYe-q9TgvDvugJ-aqO55XLuA764ZUg3SXX1ikk_EIuQ0IDSqZ5iyV3N3AxUydh2lDWaZx-R4Ij6uS9fa6Nl7ZGsNIyqp_dxC3y97D5lSzNYp-zkysmcmDGhMec0MPL6jcAshYz_lFo9MiHnrPJ66IDo2l8WWVrkkwvejgjLynWT7qZQIoPkRSJwOzbqVNR46aXuxI_ziJqimrzPoX-SPQ">
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 sm:hidden"></div>
+        <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-primary uppercase tracking-wider">
+          Manga &amp; Braço
+        </div>
+      </div>
+      <div class="p-space-md sm:p-space-lg w-full sm:w-1/2 flex flex-col justify-between gap-space-sm bg-surface-container-low">
+        <div class="flex flex-col gap-1">
+          <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Realismo &amp; Cronos</span>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface">Leão com Relógio Romano</h4>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Manga de braço imponente unindo a ferocidade do leão, numerais romanos e mostrador clássico de relógio com gradação suave e brilhos perfeitos.</p>
+        </div>
+        <div class="pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-primary">
+          <span class="">Adaptação Anatômica no Braço</span>
+          <span class="material-symbols-outlined text-[18px]">verified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="p-space-lg md:p-space-xl rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-high shadow-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-1 max-w-xl text-center md:text-left">
+<span class="font-headline-sm text-headline-sm text-on-surface">Tem uma ideia única ou uma referência especial em mente?</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Converse diretamente com o Vagner para desenhar o seu projeto sob medida, ajustando proporções e detalhes com total tranquilidade.</p>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider transition-all duration-300 shadow-md" href="https://wa.me/5511965119348?text=Ola%20Vagner!%20Tenho%20uma%20ideia%20para%20uma%20tatuagem%20ou%20piercing%20e%20gostaria%20de%20conversar." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="">Conversar no WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 4: WHY CHOOSE TATTOONES (DIFFERENTIALS)
+       ========================================== -->
+<section class="w-full bg-surface px-margin-mobile md:px-margin py-space-xl" id="diferenciais">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Title -->
+<div class="flex flex-col items-center text-center gap-space-xs max-w-3xl mx-auto">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">A Experiência Diferenciada</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Por Que Escolher o Estúdio Tattoones?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Elevamos o padrão do mercado unindo a precisão hospitalar ao calor humano, criando um espaço onde você se sente em casa desde a primeira visita.</p>
+</div>
+<!-- 5 Key Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Pillar 1: Hygiene -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col gap-space-sm group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">sanitizer</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Biossegurança e Higiene Rigorosa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Esterilização completa por autoclave hospitalar com monitoramento biológico. Todas as agulhas, ponteiras e protetores são 100% descartáveis e abertos na sua frente com total transparência.
+          </p>
+<div class="pt-space-xs flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="">Protocolo de Saúde ANVISA</span>
+</div>
+</div>
+<!-- Pillar 2: LGBTQ+ Safe Space -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col gap-space-sm group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">diversity_1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Espaço Seguro &amp; LGBTQ+ Friendly</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Ambiente acolhedor e inclusivo para todas as identidades de gênero e orientações. Respeito irrestrito ao nome social e pronomes, banheiros neutros e atendimento livre de preconceitos.
+          </p>
+<div class="pt-space-xs flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">favorite</span>
+<span class="">Santuário de Acolhimento</span>
+</div>
+</div>
+<!-- Pillar 3: Free Parking -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col gap-space-sm group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">local_parking</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Estacionamento Gratuito</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Comodidade sem estresse na sua sessão. Contamos com vagas exclusivas no local e facilidade de parada na avenida para você relaxar sem preocupação com parquímetro ou segurança.
+          </p>
+<div class="pt-space-xs flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+<span class="">Acesso Direto e Conveniente</span>
+</div>
+</div>
+<!-- Pillar 4: Flexible Payments -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col gap-space-sm group hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">credit_card</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Facilidade de Pagamento</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Sua arte cabe no seu orçamento: aceitamos cartões de crédito com parcelamento em até 12x, cartão de débito, Pix instantâneo e aproximação/NFC de forma rápida e segura.
+          </p>
+<div class="pt-space-xs flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span class="">Parcelamento em até 12x</span>
+</div>
+</div>
+<!-- Pillar 5: Fair Price + High Quality -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col gap-space-sm group hover:bg-surface-container transition-colors md:col-span-2 lg:col-span-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Preço Justo com Padrão de Alta Qualidade</h3>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Transparência sem surpresas</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-2">
+            Acreditamos que a arte de alto nível e a joalheria de titânio devem ser acessíveis e honestas. Sem cobranças abusivas de estúdio, taxas ocultas de desenho ou termos mirabolantes. Você recebe um orçamento fechado e claro antes de iniciar qualquer trabalho.
+          </p>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md text-on-surface font-label-md text-label-md">
+<span class="flex items-center gap-1 text-tertiary"><span class="material-symbols-outlined text-[18px]">check</span> Sem taxas ocultas</span>
+<span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[18px]">check</span> Suporte pós-procedimento incluso</span>
+<span class="flex items-center gap-1 text-secondary"><span class="material-symbols-outlined text-[18px]">check</span> Joias de perfuração inclusas no piercing</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 5: SOCIAL PROOF & TESTIMONIALS
+       ========================================== -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile md:px-margin py-space-xl" id="depoimentos">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Proof Header with Google Metrics -->
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">Avaliações Verificadas</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">O Que Nossos Clientes Dizem</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Mais de 86 depoimentos espontâneos no Google Maps com pontuação quase perfeita.</p>
+</div>
+<!-- Google Score Badge Container -->
+<div class="p-space-md rounded-xl bg-surface-container-high shadow-lg flex items-center gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">4.9</span>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Classificação oficial no Google Maps (86 reviews)</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[32px]">reviews</span>
+</div>
+</div>
+<!-- Testimonial Cards Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Review 1: Camila R. -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Avaliação Google
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “Ótima experiência! O Vagner é um cara sensacional, humilde demais e fura direitinho, quase não senti dor no meu piercing. O estúdio é impecável de limpo e ele me deu todo o suporte para a cicatrização.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-label-md text-label-md text-primary">CR</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Camila R.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aplicação de Piercing em Titânio</span>
+</div>
+</div>
+</div>
+<!-- Review 2: Marcos Souza -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Avaliação Google
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “O melhor tatuador da região! Fez um realismo no meu braço que todo mundo para pra elogiar na rua. Experiência, qualidade absurda e preço justo. Já virei cliente fixo, não tatuo em outro lugar.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-label-md text-label-md text-secondary">MS</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Marcos Souza</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fechamento de Braço Black &amp; Grey</span>
+</div>
+</div>
+</div>
+<!-- Review 3: Rafaela Martins -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Avaliação Google
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “Me senti extremamente acolhida e segura do início ao fim. Estúdio inclusivo de verdade, energia maravilhosa e atendimento impecável sem pressa. Nota 1000! Podem agendar sem medo.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-label-md text-label-md text-tertiary">RM</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Rafaela Martins</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tatuagem Fineline Floral</span>
+</div>
+</div>
+</div>
+<!-- Review 4: Lucas Albuquerque -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Avaliação Google
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “Fiz minha primeira tattoo com o Vagner e a paciência dele foi surreal. Ele me tranquilizou, explicou cada etapa e a cicatrização foi perfeita. Recomendo de olhos fechados para todo mundo.”
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-label-md text-label-md text-primary">LA</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Lucas Albuquerque</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Primeira Tatuagem Religiosa</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 6: FREQUENTLY ASKED QUESTIONS (FAQ)
+       ========================================== -->
+<section class="w-full bg-surface px-margin-mobile md:px-margin py-space-xl" id="faq">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-xl">
+<!-- FAQ Title -->
+<div class="flex flex-col items-center text-center gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">Esclareça Suas Dúvidas</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Perguntas Frequentes &amp; Procedimentos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Transparência total para que sua sessão seja confortável, segura e memorável.</p>
+</div>
+<!-- FAQ Items with Micro-Interactivity -->
+<div class="flex flex-col gap-space-md">
+<!-- FAQ 1 -->
+<div class="faq-item rounded-xl bg-surface-container-low p-space-lg shadow-sm transition-all duration-300">
+<button class="w-full flex items-center justify-between text-left gap-space-md" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-on-surface">Como funciona o agendamento e qual a melhor forma de marcar meu horário?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform duration-300 transform">expand_more</span>
+</button>
+<div class="faq-content mt-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+            Você pode agendar de duas formas super fáceis: diretamente pelo nosso link online do <strong class="text-on-surface">Fresha</strong>, onde você visualiza a agenda em tempo real e escolhe o melhor dia e horário, ou mandando uma mensagem no nosso <strong class="text-on-surface">WhatsApp Oficial (11) 96511-9348</strong> se desejar bater um papo prévio, mandar referências e receber um orçamento detalhado personalizado antes de confirmar.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item rounded-xl bg-surface-container-low p-space-lg shadow-sm transition-all duration-300">
+<button class="w-full flex items-center justify-between text-left gap-space-md" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dói muito fazer tatuagem ou colocar piercing?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform duration-300 transform">expand_more</span>
+</button>
+<div class="faq-content mt-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+            A dor é uma sensação subjetiva e varia de acordo com a área do corpo e a sensibilidade individual. No entanto, o Vagner aplica técnicas modernas e ágeis com agulhas de alta precisão que minimizam consideravelmente o trauma na pele. No piercing, o procedimento com agulha americana dura frações de segundo. Durante toda a sessão você tem o controle: fazemos pausas no seu tempo, com respeito absoluto ao seu ritmo.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item rounded-xl bg-surface-container-low p-space-lg shadow-sm transition-all duration-300">
+<button class="w-full flex items-center justify-between text-left gap-space-md" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-on-surface">Quais cuidados devo ter após a tatuagem ou perfuração de piercing?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform duration-300 transform">expand_more</span>
+</button>
+<div class="faq-content mt-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+            Ao término da sua sessão, você recebe um guia completo de cuidados pós-procedimento. Para tatuagens, recomendamos o uso de sabonete neutro bactericida e pomada cicatrizante específica, evitando sol direto, imersão em piscina/praia e alimentos ultraprocessados nas primeiras semanas. Para piercing, higienização com soro fisiológico estéril e não dormir em cima da joia. E o melhor: você conta com o suporte contínuo de Vagner via WhatsApp durante todo o período de cicatrização!
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item rounded-xl bg-surface-container-low p-space-lg shadow-sm transition-all duration-300">
+<button class="w-full flex items-center justify-between text-left gap-space-md" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-on-surface">Quais são as formas de pagamento aceitas no estúdio?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform duration-300 transform">expand_more</span>
+</button>
+<div class="faq-content mt-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+            Aceitamos todas as principais bandeiras de cartão de crédito (com possibilidade de parcelamento em até 12x), cartões de débito, Pix instantâneo e pagamentos por aproximação/NFC (Apple Pay, Google Pay). Tudo prático, com transparência e sem burocracias.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       SECTION 7: LOCATION & HOW TO ARRIVE
+       ========================================== -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile md:px-margin py-space-xl" id="contato">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Title -->
+<div class="flex flex-col items-start gap-space-xs max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">Venha nos Visitar</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Localização &amp; Como Chegar ao Tattoones</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Fácil acesso pela Avenida João de Andrade em Osasco, com estacionamento privativo e recepção climatizada.</p>
+</div>
+<!-- Location Grid: Info Card (Left) + Interactive Map Card (Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Left: Studio Details & Quick Contacts (5 cols) -->
+<div class="lg:col-span-5 p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-md">
+<!-- Address Unit -->
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Endereço Oficial</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">Av. João de Andrade, 1184</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bairro Santo Antônio — Osasco, SP<br>CEP 06132-002</p>
+</div>
+</div>
+<!-- Operating Hours Unit -->
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Horário de Funcionamento</span>
+<p class="font-label-lg text-label-lg text-on-surface">Segunda a Sábado: Aberto até as 20h</p>
+<p class="font-body-sm text-body-sm text-tertiary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Atendimento com hora marcada ou encaixe
+                </p>
+</div>
+</div>
+<!-- Parking & Access Unit -->
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">directions_car</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Acesso &amp; Estacionamento</span>
+<p class="font-label-lg text-label-lg text-on-surface">Vagas no local &amp; parada fácil</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Próximo aos principais corredores de transporte de Osasco.</p>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-sm">
+<a class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md uppercase tracking-wider transition-colors shadow-sm" href="https://maps.google.com/?q=Av.+Jo%C3%A3o+de+Andrade,+1184+-+Santo+Ant%C3%B4nio,+Osasco+-+SP,+06132-002" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span class="">Traçar Rota no Waze / Maps</span>
+</a>
+</div>
+</div>
+<!-- Right: Map Viewport Card (7 cols) -->
+<div class="lg:col-span-7 flex flex-col rounded-xl overflow-hidden bg-surface-container shadow-xl">
+<div class="w-full h-80 sm:h-96 lg:h-full min-h-[340px] bg-cover bg-center relative" data-location="Av. João de Andrade, 1184 - Santo Antônio, Osasco - SP, 06132-002" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCWZ-JLsWdGhzKCyxpxnUrf6pbXKIAQJZcoP7c_L7IYuGRceLDzLeBr5wp4sPgFbKKGCF3z1vc0xgeswGJ951QQLanfl8CbAFfPo7JFjlqokhxxFPhbCWP6Sy_btvl3JL4DWhcP0nosOLRQXPpyRE0sKZ1BJNt9Gw7BaajBjs-zlSfATMF5D10km-zYy598DvlgyDPdhTPKFWFTtb-hcb1zQOUl0qdKve7xxvShwT2X&quot;);">
+<div class="absolute inset-0 bg-surface/20 pointer-events-none"></div>
+<!-- Overlay Info Pin -->
+<div class="absolute top-4 left-4 p-space-sm sm:p-space-md rounded-xl bg-surface-container-lowest/90 backdrop-blur-md shadow-xl flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">store</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none">Tattoones Studio</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Av. João de Andrade, 1184</span>
+</div>
+</div>
+<!-- Interactive Map Trigger -->
+<a class="absolute bottom-4 right-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-lg hover:bg-primary-container transition-colors" href="https://maps.google.com/?q=Av.+Jo%C3%A3o+de+Andrade,+1184+-+Santo+Ant%C3%B4nio,+Osasco+-+SP,+06132-002" rel="noopener noreferrer" target="_blank">
+<span class="">Abrir no Google Maps</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+       PERSISTENT FLOATING QUICK ACTION BAR (MOBILE / TABLET)
+       ========================================== -->
+<div class="fixed bottom-4 left-4 right-4 z-40 md:hidden flex items-center gap-2 p-2 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-xl shadow-2xl border-none">
+<a class="flex-1 flex items-center justify-center gap-1.5 py-3 rounded-xl bg-surface-container-high text-tertiary font-label-md text-label-md uppercase tracking-wider" href="https://wa.me/5511965119348" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">WhatsApp</span>
+</a>
+<a class="flex-1 flex items-center justify-center gap-1.5 py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-semibold shadow-md" href="https://www.fresha.com/pt/lvp/tattoones-tatuagens-avenida-joao-de-andrade-D7R9J1" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Agendar</span>
+</a>
+</div>
+</div>
+<!-- Vanilla JS for Micro-Interactions -->
+<script>
+  function toggleFaq(btn) {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const isHidden = content.classList.contains('hidden');
+    
+    // Toggle active item
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+      btn.parentElement.classList.add('bg-surface-container');
+    } else {
+      content.classList.add('hidden');
+      icon.classList.remove('rotate-180');
+      btn.parentElement.classList.remove('bg-surface-container');
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant"><div class="w-full px-margin-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Tattoones Studio Logo" class="w-auto object-contain h-10" src="https://lh3.googleusercontent.com/aida/ALJJyrDaFcUP8iAE84Y-VLKXb0sDIpXC2wcV-sAx9ypUowF3pX_awW5dFiu4PgQvwlr-7x4aU5MU0hnfp1t47zMPrcSINd1ZqGOQJdl6aMVOfa_mL22v5zWOqenHr3EEtx_tgGMl2luxB9Yt88EZ0Wzg6wOIt1xqXZKz1vL3DtLphVqx1_1kjsIXRQN1PpWlWpZQ_K0F7Y_WXvqyghp6s-YVj401SpfXYDzh0vX1Y8jF_6RxbA"><span class="font-headline-sm text-headline-sm text-on-surface">TATTOONES</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Estúdio de tatuagem autoral e body piercing com padrão hospitalar de biossegurança em Osasco. Uma experiência imersiva e acolhedora guiada pelo artista Vagner de Paula.</p><div class="flex items-center gap-space-sm text-tertiary font-label-md text-label-md"><span class="inline-block w-2 h-2 rounded-full bg-tertiary animate-pulse"></span> Aberto até as 20h</div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Localização &amp; Acesso</span><p class="font-body-sm text-body-sm text-on-surface-variant">Av. João de Andrade, 1184<br>Santo Antônio, Osasco - SP<br>CEP 06132-002</p><div class="pt-space-xs"><a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-label-md text-label-md transition-colors" href="https://maps.google.com/?q=Av.+João+de+Andrade,+1184+-+Santo+Antônio,+Osasco+-+SP,+06132-002" rel="noopener noreferrer" target="_blank">Ver no Google Maps <span class="material-symbols-outlined text-[16px]">north_east</span></a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Agendamentos &amp; Contato</span><p class="font-body-sm text-body-sm text-on-surface-variant">Reserve sua sessão pelo Fresha ou tire dúvidas diretamente pelo WhatsApp com nossa equipe.</p><div class="flex flex-col gap-space-xs pt-space-xs"><a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors font-body-sm text-body-sm" href="https://wa.me/5511965119348" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-tertiary text-[18px]">call</span> (11) 96511-9348</a><a class="inline-flex items-center justify-center px-4 py-2 mt-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md uppercase tracking-wider transition-colors" href="https://www.fresha.com/pt/lvp/tattoones-tatuagens-avenida-joao-de-andrade-D7R9J1" rel="noopener noreferrer" target="_blank">Reservar no Fresha</a></div></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Certificações &amp; Selos</span><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low"><span class="material-symbols-outlined text-primary text-[20px]">verified</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">Biossegurança 100%</span><span class="font-label-sm text-label-sm text-on-surface-variant">Autoclave &amp; descartáveis</span></div></div><div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low"><span class="material-symbols-outlined text-tertiary text-[20px]">diversity_1</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">LGBTQ+ Safe Space</span><span class="font-label-sm text-label-sm text-on-surface-variant">Ambiente seguro &amp; respeitoso</span></div></div><div class="flex items-center gap-2 p-2 rounded-xl bg-surface-container-low"><span class="material-symbols-outlined text-secondary text-[20px]">local_parking</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">Estacionamento Gratuito</span><span class="font-label-sm text-label-sm text-on-surface-variant">Comodidade no local</span></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-lowest/50 text-center md:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Tattoones Tattoo &amp; Piercing Studio • Vagner de Paula. Todos os direitos reservados.</p><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#hero">Voltar ao topo</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#faq">Cuidados &amp; Aftercare</a></div></div></div></footer>
+
+
+
+
+
+</body></html>
